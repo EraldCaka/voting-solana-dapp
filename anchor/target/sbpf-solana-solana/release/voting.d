@@ -1,0 +1,1 @@
+/Users/eraldcaka/Documents/github/solana-rust/voting-solana-dapp/anchor/target/sbpf-solana-solana/release/voting.so: /Users/eraldcaka/Documents/github/solana-rust/voting-solana-dapp/anchor/programs/voting/src/lib.rs

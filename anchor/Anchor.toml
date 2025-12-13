@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-votingsolanadapp = "Count3AcZucFDPSFBAeHkQ6AvttieKUkyJ8HiQGhQwe"
+voting = "Count3AcZucFDPSFBAeHkQ6AvttieKUkyJ8HiQGhQwe"
 
 [registry]
 url = "https://api.apr.dev"
@@ -16,4 +16,4 @@ cluster = "localnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
-test = "vitest"
+test = "bash -lc 'if command -v vitest >/dev/null 2>&1; then vitest; elif [ -f package.json ]; then yarn install --silent && yarn test; else echo \"No package.json found in anchor/ — installing vitest locally...\" && yarn add -D vitest@latest && npx vitest; fi'"
